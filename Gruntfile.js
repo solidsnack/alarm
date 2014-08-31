@@ -6,31 +6,35 @@ module.exports = function(grunt){
         //configuration for Alarm the Ghost theme
         alarm: {
           //make sure i18n/your_locale.json exists
-          locale: 'zh_CN',
+          locale: 'en_XZ',
 
           //set the nav menu as desired
           nav: [{
             url: '/',
-            title: 'Home'
-          },{
-            url: '/works/',
-            title: 'Works'
-          },{
-            url: '/about/',
-            title: 'About Me'
+            title: '/'
           }],
+//        nav: [{
+//          url: '/',
+//          title: 'Home'
+//        },{
+//          url: '/works/',
+//          title: 'Works'
+//        },{
+//          url: '/about/',
+//          title: 'About Me'
+//        }],
 
           //there is a automatically generated nav item when user viewing
           //single article or static page, config it's title
-          navContentTitle: 'Content',
+          navContentTitle: 'Sections',
 
           disqus: {
-            enable: true,
-            shortname: 'your_disqus_id_here'  //http://xxx.disqus.com should be vaild
+            enable: false,
+            shortname: 'solidsnack'  //http://xxx.disqus.com should be vaild
           },
 
           googleAnalytics: {
-            enable: true,
+            enable: false,
             id: 'your_GA_id_here'
           },
 
